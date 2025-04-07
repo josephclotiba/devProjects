@@ -1,0 +1,183 @@
+/*
+* {
+    outline: 1px solid red;
+}
+*/
+
+body {
+    background-color: #0e1927; /* Dark blue */
+    color: #FFFFFF; /* White */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0e1927; /* Medium dark blue */
+    color: #FFFFFF; /* White */
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #FFFFFF; /* White */
+    font-weight: bold;
+}
+
+.profile-section {
+    background: linear-gradient(to bottom, #0e1927 0%, rgba(14, 25, 39, 0) 20%, rgba(14, 25, 39, 0) 80%, #0e1927 100%), 
+                url('../images/backGround.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF; /* White text */
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+.profile-content {
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-text {
+    text-align: left;
+    flex: 1; /* Allow text to take up more space */
+    margin-right: 20px; /* Reduce space between text and image */
+}
+
+.profile-text h1 {
+    margin: 0;
+    font-size: 2em;
+    color: white; /* Sky blue */
+}
+
+.profile-text p {
+    color: #B0C4DE; /* Light steel blue */
+    margin: 5px 0;
+}
+
+.profile-image {
+    flex: 1; /* Fixed width for the image container */
+    display: flex;
+    align-items: center; /* Center image vertically */
+}
+
+.profile-image img {
+    border-radius: 48%;
+    width: 175px;
+    height: 200px;
+    border: 5px solid rgb(9, 24, 53); 
+    display: block;
+    margin: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .profile-image {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #1E90FF; /* Dodger blue */
+    color: #FFFFFF; /* White text */
+    cursor: pointer;
+}
+
+.about-me, .contact-info, .skills-expertise, .professional-experience, .get-in-touch {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333; /* Dark text */
+}
+
+.about-me p, .contact-info p, .skills-expertise table, .professional-experience table, .get-in-touch p {
+    color: #333; /* Dark text */
+}
+
+.skills-expertise table, .professional-experience table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.skills-expertise table, .skills-expertise th, .skills-expertise td, .professional-experience th, .professional-experience td {
+    border: 1px solid #ddd;
+}
+
+.skills-expertise th, .skills-expertise td, .professional-experience th, .professional-experience td {
+    padding: 10px;
+    text-align: left;
+}
+
+.skills-expertise th, .professional-experience th {
+    background-color: #f4f4f4;
+}
+
+.skills-expertise ul, .professional-experience ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-expertise ul li, .professional-experience ul li {
+    margin-bottom: 10px;
+}
+
+.skills-expertise ul li::before, .professional-experience ul li::before {
+    content: "🔹"; /* Substitute with appropriate icons */
+    margin-right: 10px;
+}
+
+.get-in-touch {
+    text-align: center;
+}
+
+.get-in-touch p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.get-in-touch .social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.get-in-touch .social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.get-in-touch .social-media img {
+    width: 30px;
+    height: 30px;
+}
