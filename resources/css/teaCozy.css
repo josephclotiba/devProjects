@@ -1,0 +1,198 @@
+html {
+    font-size: 22px;
+}
+
+body {
+    display: flex;
+    background-color: black;
+    font-size: 1rem;
+    color: seashell;
+    opacity: 0.9;
+    font-family: Helvetica;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    display: flex;  
+    height: 3.14rem;
+    border-bottom: 1px solid seashell;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0 0.45rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: black;
+}
+
+.logo {
+    max-width: 70%;
+    height: 70%;
+    padding-left: 0.45rem;
+
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin-right: 0.9rem;
+    gap: 0.9rem;
+}
+
+main {
+    margin-top: 2.77rem;
+    justify-content: center;
+}
+
+section.mission {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.mission {
+    background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 38%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.mission-text {
+    background-color: black;
+    width: 100%;
+    padding: 0.9rem;
+}
+
+.feature {
+    margin: 0 auto;
+    padding: 3.63rem 0;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.menu-item {
+    height: 200px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.menu-item img {
+    height: 90%;
+    width: 100%;
+}
+
+section.location {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.location {
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 38%;
+    padding-top: 3.81rem;
+    box-sizing: border-box;
+}
+
+.location h2 {
+    padding-top: 2.81rem;;
+}
+
+.location-grid {
+    margin: 0.68rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.82rem;
+}
+
+.location-item {
+    width: 25%;
+    opacity: 1;
+    background-color: black;
+    padding: 0.9rem;
+}
+
+.location-item p {
+    margin: 0.9rem;
+}
+
+.contact {
+    height: 200px;
+    padding-top: 2.27rem;
+}
+
+.footer {
+    float: left;
+    justify-items: left;
+    padding-left: 0.45rem;
+}
+
+h2, h3, h4 {
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 661px), (orientation: landscape) {
+    html {
+        font-size: 20px;
+    }
+    html {
+        font-size: 20px;
+    }
+    .mission {  
+        height: 18%;
+    }
+
+    .location {
+        height: 18%;
+    }
+}
+
+@media only screen and (max-width: 490px), (orientation: landscape) {
+    html {
+        font-size: 18px;
+    }
+    .logo {
+    max-width: 70%;
+    height: 70%;
+    padding-left: 0.45rem;
+}
+}
+
+@media only screen and (max-width: 393px), (orientation: landscape) {
+    html {
+        font-size: 14px;
+    }
+
+    .header {
+        width: 100%;
+    }
+    
+    .logo {
+    max-width: 50%;
+    height: 50%;
+    padding-left: 0.45rem;
+    }
+
+    .menu-item {
+    height: 150px;
+    width: 250px;
+    margin-bottom: 10px;
+    }
+
+    .menu-item img {
+    height: 90%;
+    width: 100%;
+    }
+}
